@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: user-center
+  datasource:
+    url: jdbc:mysql://localhost:3306/hx?characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+server:
+  port: 8080
+  reactive:
+    session:
+      #      sesion失效时间
+      timeout: 86400
+  servlet:
+    context-path: /api
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+  global-config:
+    db-config:
+      logic-delete-field: isDelete
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+      id-type: auto

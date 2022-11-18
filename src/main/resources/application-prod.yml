@@ -1,0 +1,12 @@
+spring:
+  # DataSource Config
+  datasource:
+    url: jdbc:mysql://124.220.16.61:3306/user_center?characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: hanxing888.
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  # session 失效时间
+  session:
+    timeout: 86400
+server:
+  address: 0.0.0.0
